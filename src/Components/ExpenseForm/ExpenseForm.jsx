@@ -7,17 +7,14 @@ export const ExpenseForm = (props) => {
 
   const titleChangeHandler = (event) =>{
     setTitle(event.target.value);
-    console.log(title);
   }
   
   const amountChangeHandler = (event) => {
     setAmount(event.target.value);
-    console.log(amount);
   }
 
   const dateChangeHandler = (event) => {
     setDate(event.target.value);
-    console.log(date);
   }
 
   const submitHandler = (event) => {
@@ -29,7 +26,7 @@ export const ExpenseForm = (props) => {
     }
     props.onSaveExpenseData(expenses);
     setTitle('');
-    setAmount('');
+    setAmount(''); 
     setDate('');
   }
 
